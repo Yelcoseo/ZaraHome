@@ -1,0 +1,23 @@
+.productsList {
+  display: inline-block;
+  width: 48%;
+  height: 48%;
+  padding: 4px;
+}
+
+.image {
+  width: 100%;
+  cursor: pointer;
+}
+
+.pictureText {
+  text-align: center;
+}
+
+.colorImage {
+  border-radius: 100%;
+  width: 26px;
+  height: 26px;
+  border: 1px solid #1e1e1e;
+  cursor: pointer;
+}
