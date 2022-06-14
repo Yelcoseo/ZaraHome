@@ -15,26 +15,6 @@ export class CategoryComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    console.log('products', this.productList.products);
-    // this.productList.products.map(
-    //   (product) => {
-    //     let maxPrice = 0;
-    //     let minPrice = 999999;
-    //     product.colors.forEach(color => {
-    //       color.sizes.forEach(size => {
-    //         if (Number(size.price) > maxPrice) {
-    //           maxPrice = Number(size.price);
-    //         }
-    //         if (Number(size.price) < minPrice) {
-    //           minPrice = Number(size.price);
-    //         }
-    //         console.log('maxPrice', maxPrice);
-    //         console.log('minPrice', minPrice);
-
-    //       })
-    //     })
-    //   }
-    // )
   }
 
   navigateToProduct(id: number, name: string) {
