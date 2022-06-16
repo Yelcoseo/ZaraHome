@@ -1,7 +1,10 @@
-<div class="productsList" *ngFor="let product of productList.products">
+<div class="productsList" *ngFor="let product of productsWithPrices">
   <img class="image" [src]="product.image" (click)="navigateToProduct(product.id, product.name)">
   <div class="pictureText">
     <span>{{ product.name }}</span>
+    <div>
+      <span>{{ product.minPrice }}€ - {{ product.maxPrice }}€</span>
+    </div>
     <div>
       <button mat-icon-button *ngFor="let color of product.colors" style="padding:2px" #tooltip="matTooltip"
         matTooltip="{{color.name}}" matTooltipPosition="below">
